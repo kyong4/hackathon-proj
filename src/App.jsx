@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import selfie from "./selfie.jpg";
+import Welcome from "./Welcome"
 import './App.css'
 
 //This app will first ask user to set medical records, allergies, and reminder.
@@ -25,12 +26,8 @@ function App() {
            style= {{ width:700}} />
         
       </div>
-      <h1>Welcome to Health Tracker. Please answer the following questions.</h1>
-      
-      <q>Do you have any medical conditions?</q> 
-      <li>Do you have any allergies?</li>
-      <li>Would you like to set a reminder?</li>
-      
+<Welcome />
+
 {/* after a new user answers the initial questions, they will be redirected to the default homepage */}
 {/* the homepage will be a Navbar with medical conditions, allergies, reminder, that will print the array/list of records/allergies when clicked. */}
       <ul>
